@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Illinois Student Senate</title>
+		<meta name="description" content="Illinois Student Senate Home Page!">
+		<meta name="keywords" content="illinois, student, senate, home, page, uofi, urbana, champaign, government, university">
+		<meta charset="utf-8">
+		<link href="stylesheet.css" rel="stylesheet" type="text/css">
+		<link href="fonts.css" rel="stylesheet" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link rel="icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<script src='jquery.min.js'></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<ul class="topbar" id="topup">
+					<li><a href="#"><span></span>HOME</a></li>
+					<li><a href="#"><span></span>ABOUT</a></li>
+					<li><a href="#"><span></span>GET INVOLVED</a></li>
+					<li><a href="#"><span></span>ARCHIVES</a></li>
+					<li><a href="#"><span></span>CONTACT</a></li>
+				</ul>
+				<button onclick="displaynav()" id="sliderb"><img src="menu.svg" class="svgw" height="40px"></button>
+
+			</div>
+				<ul class="topbar" id="slider">
+					<li><a href="#"><span></span>HOME</a></li>
+					<li><a href="#"><span></span>ABOUT</a></li>
+					<li><a href="#"><span></span>GET INVOLVED</a></li>
+					<li><a href="#"><span></span>ARCHIVES</a></li>
+					<li><a href="#"><span></span>CONTACT</a></li>
+				</ul>
+
+			<div class="content">
+				<div class="title">
+					<img src="http://iss.illinois.edu/headerbuttons/header_logo.png" height="200px"></img>
+					<p>Illinois Student Senate</p>
+					<p>The official voice of the student body</p>
+				</div>
+				<div class="items">
+					
+					<div class="info">
+						<p>We are the student senate of the University of Illinois Urbana - Champaign. </p>
+					</div>
+					<div class="flexbox">
+						<div>
+							<p>Leadership</p>
+							<p>As the student senate, we represent our classmates, friends, alumni, and future students.</p>
+						</div>
+						<div>
+							<p>Community</p>
+							<p>Anyone can join us and student senate to help our community stay ahead.</p>
+						</div>
+						<div>
+							<p>Impact</p>
+							<p>No matter what you do, or how much time you have, you can help make an impact for everyone.</p>
+						</div>
+
+					</div>
+					<button onclick="showpost()" class="abutton">See Announcements</button>
+					<div id="announcements">
+						<p>Announcements</p>
+						<div>
+							<p>ISS Report on the College of Medicine</p>
+							<p>The Illinois Student Senate commissioned an ad-hoc committee to explore and discuss the proposed College of Medicine and then advise student senators. The report outlines summaries, questions and recommendations as the proposal moves forward. You can read the final report <a href="#">here</a></p>
+						</div>
+						<div>
+							<p>It’s On Us at Illinois Continues</p>
+							<p>As the semester heats up, so will the It’s On Us campaign. We released a new public service announcements for our series and have already begun planning some new campaign strategies and events for the semester. Help us change the conversation around sexual assault on college campuses and stay up to date here. Read more about our campaign in The News-Gazette or watch on WCIA. Previous Coverage: WCIA, WICD, UI-7, and The Daily Illini.</p>
+						</div>
+						<div>
+							<p>Teaching Excellence Awards</p>
+							<p>There are some professors and teaching assistants that go above and beyond in the classroom and provide Illinois students with an exceptional education. The ISS searches for these instructors to recognize and thank them with a Teaching Excellence Award during a formal ceremony in the spring. Students may now nominate their instructors for the awards here or read more information here.</p>
+						</div>
+						<div>
+							<p>Applications for Senator Vacancies Remain Open</p>
+							<p>The Eleventh Assembly still has Student Senator vacancies. Students who are interested in becoming a Senator should check the voting units and vacancy list to see if they are eligible to apply for a vacancy. The Committee on Internal Affairs reviews all applications for a vacancy and then appoints them on a rolling basis. Look at Get Involved to apply now.</p>
+						</div>
+						<button onclick="showpost()" class="abutton">Close</button>
+					</div>
+
+
+
+				</div>
+
+			</div>
+			<div class="push"></div>
+		</div>
+		<div class="footer">
+			<p><a href="https://www.google.com/maps/place/Illini+Union">Illinois Student Senate - 250 Illini Union, 1401 W Green Street Urbana, IL 61801</a> | 217.333.6543 </p>
+		</div>
+
+		<script>
+			var count=0;
+			function showpost(){
+				var dropper=document.getElementById("announcements");
+				if (count==0){
+					$(dropper).slideDown(400);
+					count=1;
+				}
+				else{
+					$(dropper).slideUp(400);
+					count=0;
+				}
+			}
+			var count1=0;
+			function displaynav(){
+				var menu=document.getElementById("slider");
+				if (count1==0){
+					$(menu).slideDown(400);
+					count1=1;
+				}
+				else{
+					$(menu).slideUp(400);
+					count1=0;
+				}
+			}
+		</script>
+	</body>
+</html>
